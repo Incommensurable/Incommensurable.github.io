@@ -10,6 +10,54 @@ body {
   height: 100vh;
 }
 
+banner{
+  position:fixed;
+  width: 130px;
+  height:100px;
+  left:75px;
+  top:100px;
+  z-index:-1;
+  color: #000000;
+  font-size: 90pt;
+  font-family: "Lato";
+  text-align: Left;
+  line-height:88px;
+  letter-spacing:2pt;
+}
+
+mark.invis{
+	color:#fffef8;
+	background: none;
+}
+
+mark.subtitle{
+	line-height:0px;
+	font-size:20pt;
+	background: none;
+}
+
+
+.card{
+	position:relative;
+	width:130px;
+	display: inline-block;
+	z-index:-1;
+}
+
+.card .img-top {
+	display: none;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index:5;
+}
+
+.card:hover .img-top{
+	display: inline;
+}
+
+
+
 trunk{
   flex-direction: column;
   height: 100%;
@@ -18,22 +66,77 @@ trunk{
   justify-content: center;
   flex-wrap: wrap;
   position: relative;
+  z-index:99;
+}
+
+tlunk{
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index:99;
+  margin: 100px;
+ 
+
+}
+
+
+a{
+display: block;}
+
+.blink{
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+  /* fixes overlap error in IE7/8, 
+     make sure you have an empty gif */
+  background-image: url('empty.gif');
+}
+
+h1{
+  color: #000000;
+  font-size: 18pt;
+  font-family: "Lato";
+  text-align: left;
+  line-height: 20px;
+  letter-spacing:2pt;
+  background: #fffef8;
+}
+
+p1{
+  color: #000000;
+  font-size: 12pt;
+  font-family: "Lato";
+  text-align: left;
+  line-height: 15px;
+  letter-spacing:1pt;
+  background: #fffef8;
 }
 
 box {
   margin: 10px;
   width: 500px;
   height: 75px;
+  color: #FFFFFF;
+  font-size: 18pt;
+  font-family: "Lato";
+  text-align: center;
+  line-height:75px;
+  letter-spacing:2pt;
+  position: relative;
   /*border: 6px solid #111818;
   border-radius: 5px;
   box-shadow: 10px 10px #FFBB33;*/
 }
 
-.a {
-  background-color: #FE2F20;
+.ab {
+  background-color: #F4A83E;
 }
 
-.a:hover {
+.ab:hover {
   background-color: #ff958d;
   transition: 0.3s;
 }
@@ -43,7 +146,7 @@ box {
 }
 
 .b:hover {
-  background-color: #F8CB8B;
+  background-color: #56ABCA;
   transition: 0.3s;
 }
 
@@ -52,7 +155,7 @@ box {
 }
 
 .c:hover {
-  background-color: #ff958d;
+  background-color: #9fc27b;
   transition: 0.3s;
 }
 .d {
@@ -60,7 +163,7 @@ box {
 }
 
 .d:hover {
-  background-color: #ff958d;
+  background-color: #E4BFED;
   transition: 0.3s;
 }
 .e {
