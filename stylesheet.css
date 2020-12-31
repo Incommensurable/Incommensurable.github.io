@@ -68,18 +68,27 @@ trunk{
   position: relative;
   z-index:99;
 }
-
-tlunk{
-  height: 100%;
+tnk{
+  flex-direction: column;
+  height: 100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
   position: relative;
-  z-index:99;
-  margin: 100px;
- 
-
 }
 
+
+.textb { 
+  width:  70%;
+  minimum-height: 70%;
+  margin: auto;
+  position: relative;
+  top: 20px;
+  background-color:#fffef8;
+  padding: 30px;
+  
+}
 
 a{
 display: block;}
@@ -103,7 +112,7 @@ h1{
   text-align: left;
   line-height: 20px;
   letter-spacing:2pt;
-  background: #fffef8;
+
 }
 
 p1{
@@ -111,9 +120,8 @@ p1{
   font-size: 12pt;
   font-family: "Lato";
   text-align: left;
-  line-height: 15px;
-  letter-spacing:1pt;
-  background: #fffef8;
+  line-height: 22px;
+  padding-bottom: 50px ;
 }
 
 box {
